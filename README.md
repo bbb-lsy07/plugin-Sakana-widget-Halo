@@ -1,6 +1,6 @@
 # 「Sakana! Widget」插件 for Halo
 
-本插件将原 Web 版的 Sakana Widget 集成为 Halo 博客系统挂件，在 Halo 应用市场即可一键安装。
+本插件将原 Web 版的 Sakana Widget 集成为 Halo 博客系统挂件，在 Halo 应用市场可一键安装。
 
 ## 功能
 
