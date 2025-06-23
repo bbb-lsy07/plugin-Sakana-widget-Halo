@@ -31,4 +31,6 @@ z-index: 5;
 
 本项目代码基于 MIT 协议授权，本项目是基于上游项目 [「Sakana!」石蒜模拟器](https://github.com/itorr/sakana) 和 [Sakana widget for Web](https://github.com/dsrkafuu/sakana-widget) 的二次（三次？）开发。
 
-插画出处：大伏アオ [@blue00f4](https://twitter.com/blue00f4) [pixiv](https://pixiv.me/aoiroblue1340) | 内置角色图片未经原作者授权**不可商用**。
+插画出处：大伏アオ [@blue00f4](https://twitter.com/blue00f4) [pixiv](https://pixiv.me/aoiroblue1340)
+Logo 图片出处：[@Sanmon](https://www.pixiv.net/artworks/111233508)
+内置图片未经原作者授权**不可商用**。
