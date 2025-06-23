@@ -18,8 +18,10 @@
 前端 min.js 文件是基于原 Web 版项目直接 rollup 打包的，所以目前小组件的尺寸和位置是固定的，参数如下：
 
 ```
-position: fixed;
 size: 200,
+```
+```
+position: fixed;
 right: 40px;
 bottom: 45px;
 z-index: 5;
