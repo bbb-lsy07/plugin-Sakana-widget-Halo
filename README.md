@@ -1,76 +1,33 @@
-# plugin-starter
+# Sakana Widget Halo 插件
 
-Halo 2.x 插件开发快速开始模板。
+本插件将 Sakana Widget（石蒜模拟器）集成为 Halo 博客系统挂件，支持后台自定义位置、尺寸、角色图片等参数。
 
-## 开发环境
+## 功能
+- 支持侧边栏/页脚等固定位置显示 Sakana Widget
+- 后台可配置显示/隐藏、位置、尺寸、角色图片
+- 角色图片支持 Halo 资源上传或外链
 
-插件开发的详细文档请查阅：<https://docs.halo.run/developer-guide/plugin/introduction>
+## 使用说明
+1. 在 Halo 应用市场安装本插件
+2. 后台“插件管理”中找到本插件，点击“设置”进行个性化配置
+3. 保存后自动注入到前台页面，无需手工写代码
 
-所需环境：
 
-1. JDK 21
-2. Node 20
-3. pnpm 9
-4. Docker (可选)
 
-克隆项目：
 
-```bash
-git clone git@github.com:halo-sigs/plugin-starter.git
 
-# 或者当你 fork 之后
 
-git clone git@github.com:{your_github_id}/plugin-starter.git
+
+目前组件的尺寸和位置是写死的，参数如下：
+
+```
+position: fixed;
+size: 200,
+right: 40px;
+bottom: 40px;
+z-index: 5;
 ```
 
-```bash
-cd path/to/plugin-starter
-```
+## 开源协议
 
-### 运行方式 1（推荐）
-
-> 此方式需要本地安装 Docker
-
-```bash
-# macOS / Linux
-./gradlew pnpmInstall
-
-# Windows
-./gradlew.bat pnpmInstall
-```
-
-```bash
-# macOS / Linux
-./gradlew haloServer
-
-# Windows
-./gradlew.bat haloServer
-```
-
-执行此命令后，会自动创建一个 Halo 的 Docker 容器并加载当前的插件，更多文档可查阅：<https://docs.halo.run/developer-guide/plugin/basics/devtools>
-
-### 运行方式 2
-
-> 此方式需要使用源码运行 Halo
-
-编译插件：
-
-```bash
-# macOS / Linux
-./gradlew build
-
-# Windows
-./gradlew.bat build
-```
-
-修改 Halo 配置文件：
-
-```yaml
-halo:
-  plugin:
-    runtime-mode: development
-    fixedPluginPath:
-      - "/path/to/plugin-starter"
-```
-
-最后重启 Halo 项目即可。
+MIT

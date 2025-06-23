@@ -4,18 +4,21 @@ plugins {
     id "run.halo.plugin.devtools" version "0.6.0"
 }
 
-group 'run.halo.starter'
+group 'run.halo.sakanawidget'
 
 repositories {
     mavenCentral()
+    maven { url 'https://s01.oss.sonatype.org/content/repositories/releases' }
+    maven { url 'https://s01.oss.sonatype.org/content/repositories/snapshots/' }
+    maven { url 'https://repo.spring.io/milestone' }
 }
 
 dependencies {
     implementation platform('run.halo.tools.platform:plugin:2.21.0')
     compileOnly 'run.halo.app:api'
-
     testImplementation 'run.halo.app:api'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compileOnly 'org.springframework.boot:spring-boot-starter-webflux'
+    compileOnly 'org.springframework:spring-core'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
