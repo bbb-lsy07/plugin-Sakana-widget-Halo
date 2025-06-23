@@ -7,7 +7,7 @@ metadata:
   name: SakanaWidget
 spec:
   enabled: true
-  requires: ">=2.21.0"
+  requires: ">=2.0"
   author:
     name: Lentinel
     website: https://github.com/Lentinel
@@ -18,5 +18,4 @@ spec:
   displayName: "Sakana! Widget"
   description: "Halo 版本的莉可丽丝小组件。"
   license:
-    - name: "GPL-3.0"
-      url: "https://github.com/Lentinel/plugin-Sakana-widget-Halo/blob/main/LICENSE"
+    - name: "MIT"

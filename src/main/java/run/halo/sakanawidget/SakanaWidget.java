@@ -24,7 +24,7 @@ public class SakanaWidget implements TemplateHeadProcessor {
              <div id="sakana-widget" class="sakana-float" style="
                  position: fixed;
                  right: 40px;
-                 bottom: 40px;
+                 bottom: 45px;
                  z-index: 5;
              "></div>
 
