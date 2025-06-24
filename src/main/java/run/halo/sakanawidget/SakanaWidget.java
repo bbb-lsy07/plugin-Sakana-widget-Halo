@@ -28,7 +28,7 @@ public class SakanaWidget implements TemplateHeadProcessor {
                  position: fixed;
                  right: 40px;
                  bottom: 45px;
-                 z-index: 5;
+                 z-index: 10;
              "></div>
 
                   <script src="%1$s/sakana.min.js?v=%2$s"></script>
