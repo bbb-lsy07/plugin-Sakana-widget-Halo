@@ -27,6 +27,8 @@ bottom: 45px;
 z-index: 5;
 ```
 
+小组件会在当前网站的所有页面中显示。
+
 ## License
 
 本项目代码基于 MIT 协议授权，本项目是基于上游项目 [「Sakana!」石蒜模拟器](https://github.com/itorr/sakana) 和 [Sakana widget for Web](https://github.com/dsrkafuu/sakana-widget) 的二次（三次？）开发。
