@@ -24,18 +24,23 @@ public class SakanaWidget implements TemplateHeadProcessor {
              <link rel="stylesheet" href="%1$s/sakana.min.css"/>
              <link rel="stylesheet" href="%1$s/css/sakana.css"/>
 
-             <div id="sakana-widget" class="sakana-float" style="
-                 position: fixed;
-                 right: 40px;
-                 bottom: 45px;
-                 z-index: 10;
-             "></div>
+             <script defer src="%1$s/sakana.min.js?v=%2$s"></script>
+             <script>
+                 // 动态追加到 body 末尾
+                 const widgetDiv = document.createElement('div');
+                 widgetDiv.id = 'sakana-widget';
+                 widgetDiv.className = 'sakana-float';
+                 widgetDiv.style.position = 'fixed';
+                 widgetDiv.style.right = '40px';
+                 widgetDiv.style.bottom = '45px';
+                 widgetDiv.style.zIndex = '9999';
+                 document.body.appendChild(widgetDiv);
 
-                  <script src="%1$s/sakana.min.js?v=%2$s"></script>
-                    <script>
-                         new SakanaWidget().mount('#sakana-widget');
-                  </script>
-
+                 // 确保脚本加载后初始化
+                 window.addEventListener('load', () => {
+                     new SakanaWidget().mount('#sakana-widget');
+                 });
+             </script>
              """.formatted(STATIC_PATH, version);
 
         model.add(modelFactory.createText(injectHtml));
