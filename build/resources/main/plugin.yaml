@@ -1,0 +1,20 @@
+---
+apiVersion: "plugin.halo.run/v1alpha1"
+kind: "Plugin"
+metadata:
+  name: "SakanaWidget"
+spec:
+  enabled: true
+  requires: ">=2.0"
+  author:
+    name: "Lentinel"
+    website: "https://github.com/Lentinel"
+  logo: "logo.png"
+  homepage: "https://github.com/Lentinel/plugin-Sakana-widget-Halo#readme"
+  repo: "https://github.com/Lentinel/plugin-Sakana-widget-Halo"
+  issues: "https://github.com/Lentinel/plugin-Sakana-widget-Halo/issues"
+  displayName: "Sakana! Widget"
+  description: "Halo 版本的莉可丽丝小组件。"
+  license:
+  - name: "MIT"
+  version: "1.0.0"
