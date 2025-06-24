@@ -13,8 +13,8 @@ spec:
   homepage: "https://github.com/Lentinel/plugin-Sakana-widget-Halo#readme"
   repo: "https://github.com/Lentinel/plugin-Sakana-widget-Halo"
   issues: "https://github.com/Lentinel/plugin-Sakana-widget-Halo/issues"
-  displayName: "Sakana! Widget"
-  description: "Halo 版本的莉可丽丝小组件。"
+  displayName: "🐟「Sakana!」摇摇乐"
+  description: "Halo 版的莉可丽丝摇摇乐小组件。"
   license:
   - name: "MIT"
   version: "1.0.0"

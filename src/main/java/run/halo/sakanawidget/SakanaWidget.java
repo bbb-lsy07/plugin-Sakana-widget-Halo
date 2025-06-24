@@ -18,8 +18,11 @@ public class SakanaWidget implements TemplateHeadProcessor {
         IElementModelStructureHandler structureHandler) {
         final IModelFactory modelFactory = context.getModelFactory();
 
+        String version = String.valueOf(System.currentTimeMillis());
+
         String injectHtml = """
              <link rel="stylesheet" href="%1$s/sakana.min.css"/>
+             <link rel="stylesheet" href="%1$s/css/sakana.css"/>
 
              <div id="sakana-widget" class="sakana-float" style="
                  position: fixed;
@@ -28,19 +31,12 @@ public class SakanaWidget implements TemplateHeadProcessor {
                  z-index: 5;
              "></div>
 
-             <script src="%1$s/sakana.min.js"></script>
-             <script>
-                 new SakanaWidget().mount('#sakana-widget');
-             </script>
+                  <script src="%1$s/sakana.min.js?v=%2$s"></script>
+                    <script>
+                         new SakanaWidget().mount('#sakana-widget');
+                  </script>
 
-             <style>
-                 @media screen and (max-width: 768px) {
-                     .sakana-float {
-                         display: none !important;
-                     }
-                 }
-             </style>
-            """.formatted(STATIC_PATH);
+             """.formatted(STATIC_PATH, version);
 
         model.add(modelFactory.createText(injectHtml));
         return Mono.empty();
