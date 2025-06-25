@@ -45,6 +45,18 @@ interface SakanaWidgetOptions {
      * enable accessibility title feature, default to `false`
      */
     title?: boolean;
+    /**
+     * show control button for horizontal jump, default to `true`
+     */
+    showControls?: boolean;
+    /**
+     * text of the control button for horizontal jump, default to `横跳`
+     */
+    controlButtonText?: string;
+    /**
+     * sway amplitude when idle, default to `10`
+     */
+    idleSway?: number;
 }
 /**
  * widget instance class
