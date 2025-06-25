@@ -21,10 +21,10 @@
 size: 200,
 ```
 ```
-position: fixed;
-right: 40px;
-bottom: 45px;
-z-index: 5;
+widgetDiv.style.position = 'fixed';
+widgetDiv.style.right = '40px';
+widgetDiv.style.bottom = '45px';
+widgetDiv.style.zIndex = '9999';
 ```
 
 小组件会在当前网站的所有页面中显示。
