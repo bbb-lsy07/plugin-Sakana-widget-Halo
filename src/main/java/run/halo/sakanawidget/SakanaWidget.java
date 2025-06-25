@@ -40,7 +40,7 @@ public class SakanaWidget implements TemplateHeadProcessor {
                 });
             </script>
 
-             """.formatted(STATIC_PATH, version);
+            """.formatted(STATIC_PATH, version);
 
         model.add(modelFactory.createText(injectHtml));
         return Mono.empty();
