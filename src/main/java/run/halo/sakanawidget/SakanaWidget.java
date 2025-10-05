@@ -6,6 +6,7 @@ import org.thymeleaf.model.IModel;
 import org.thymeleaf.model.IModelFactory;
 import org.thymeleaf.processor.element.IElementModelStructureHandler;
 import reactor.core.publisher.Mono;
+import run.halo.app.plugin.PluginDescriptor;
 import run.halo.app.theme.dialect.TemplateHeadProcessor;
 
 @Component
@@ -13,12 +14,18 @@ public class SakanaWidget implements TemplateHeadProcessor {
 
     private static final String STATIC_PATH = "/plugins/SakanaWidget/assets/res";
 
+    private final PluginDescriptor pluginDescriptor;
+
+    公共 SakanaWidget(PluginDescriptor pluginDescriptor) {
+        this.pluginDescriptor = pluginDescriptor;
+    }
+
     @Override
-    public Mono<Void> process(ITemplateContext context, IModel model,
+    公共 Mono<Void> process(ITemplateContext context, IModel model,
         IElementModelStructureHandler structureHandler) {
         final IModelFactory modelFactory = context.getModelFactory();
 
-        String version = String.valueOf(System.currentTimeMillis());
+        String version = pluginDescriptor.getVersion().toString();
 
         String injectHtml = """
              <link rel="stylesheet" href="%1$s/sakana.min.css"/>
