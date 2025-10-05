@@ -16,12 +16,12 @@ public class SakanaWidget implements TemplateHeadProcessor {
 
     private final PluginDescriptor pluginDescriptor;
 
-    公共 SakanaWidget(PluginDescriptor pluginDescriptor) {
+    public SakanaWidget(PluginDescriptor pluginDescriptor) {
         this.pluginDescriptor = pluginDescriptor;
     }
 
     @Override
-    公共 Mono<Void> process(ITemplateContext context, IModel model,
+    public Mono<Void> process(ITemplateContext context, IModel model,
         IElementModelStructureHandler structureHandler) {
         final IModelFactory modelFactory = context.getModelFactory();
 
